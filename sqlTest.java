@@ -39,7 +39,7 @@ public class sqlTest extends TestCase {
 		assertTrue(tbl.getGrid().get(0).get(1).equals("Asia"));
 		tbl.printInAplication("SELECT * FROM metropolises WHERE metropolis = " + "\"New York" + "\";");
 		assertTrue(tbl.getGrid().get(0).get(1).equals("North America"));
-		tbl.printInAplication("SELECT * FROM metropolises WHERE population >= " + 20400000 +";");
+		tbl.printInAplication("SELECT * FROM metropolises WHERE population >= " + 20400000 +";"); 
 		assertTrue(tbl.getGrid().get(0).get(0).equals("Mumbai"));
 		tbl.printInAplication("SELECT * FROM metropolises WHERE population >= " + 21000000 +";");
 		assertTrue(tbl.getGrid().get(0).get(0).equals("New York"));

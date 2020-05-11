@@ -94,16 +94,16 @@ public class application extends JFrame {
 				String sqlString = "SELECT * FROM metropolises WHERE metropolis = metropolis";
 				if(!metrop.getText().equals("") ) {
 					if(matchOption.getSelectedIndex()==0) {  
-						sqlString += " and metropolis = " + "\"" + metrop.getText() + "\"";
+						sqlString += " and metropolis = " + "\"" + metrop.getText() + "\""; 
 					}else {
-						sqlString += " and metropolis like " + "\"" + metrop.getText() + "\""; 
+						sqlString += " and metropolis like " + "\"%" + metrop.getText() + "%\""; 
 					} 
 				}
 				if(!conti.getText().equals("") ) { 
 					if(matchOption.getSelectedIndex()==0) {  
 						sqlString += " and continent = " + "\"" + conti.getText() + "\"";
 					}else {
-						sqlString += " and continent like " + "\"" + conti.getText() + "\"";
+						sqlString += " and continent like " + "\"%" + conti.getText() + "%\"";
 					}   
 				}
 				if(!popul.getText().equals("")) {
