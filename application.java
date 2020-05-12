@@ -68,7 +68,7 @@ public class application extends JFrame {
 	    searchOptionBox.add(matchOption); 
 	     
 	    mainBox.add(searchOptionBox);
-	    mainBox.add(Box.createVerticalStrut(300)); 
+	    mainBox.add(Box.createVerticalStrut(30000)); 
 	    add(mainBox,BorderLayout.EAST);
 		
 		setLocationByPlatform(true);
